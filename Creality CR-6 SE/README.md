@@ -6,6 +6,6 @@ Printer settings are based on the Creality CR10, as the CR6 is not available yet
 
 Profiles:
 
-    - Fine: 0.12 layer height. Slow to print but high quality.
-    - Standard: 0.2 layer height. Takes about 1/2 the time of the fine profile. Still good, better at bridging.
-    - Antistring: Based on standard, but with additional X-Hop. I found this works better for low quality filaments that are more prone to stringing issues. It can't remove all wispy hairs though.
+- **Fine**: 0.12 layer height. Slow to print but high quality.
+- **Standard**: 0.2 layer height. Takes about 1/2 the time of the fine profile. Still good, better at bridging.
+- **AntiString**: Based on standard, but with additional Z-Hop on retract. I found this works better for low quality filaments that are more prone to stringing issues. It can't remove all wispy hairs though.
