@@ -8,8 +8,8 @@ This is the process to calibrate the extruder:
 
 1. Send command M503 to read current settings. It will output a load of info to the console. Look for something like:
 
-    Steps per unit:
-    M92 X80.00 Y80.00 Z400.00 E93.00
+        Steps per unit:
+        M92 X80.00 Y80.00 Z400.00 E93.00
 
 The __E93.00__ at the end of this line is the current value for the steps for the extruder. in this case 93.00 (steps/mm)
 
@@ -17,10 +17,13 @@ The __E93.00__ at the end of this line is the current value for the steps for th
 
 3. Measure again between the runout sensor and the mark you made, to work out exactly how much it actually extruded, eg 46mm
 
-4. Calculate the new steps value. The formula is:
-    (**Amount requested** x **original steps value**) / **amount extruded**
+4. Calculate the new steps value.
 
-    In this example (50 x 93) / 46 = 101.087
+    The formula is:
+        
+        (Amount requested x original steps value) / amount extruded
+
+    In this example (50 x 93) / 46 = 101.087...
     So we want 101.1 as the new setting.
 
 5. Set the new value with command **M92 Exxx** where __xxx__ = the new value. In this case **M92 E101.1**
