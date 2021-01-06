@@ -31,3 +31,9 @@ The __E93.00__ at the end of this line is the current value for the steps for th
 6. Save the new setting to memory with command **M500**
 
 7. Test! Do another extrude & measure, and check you have got it accurate. If not, repeat the process.
+
+# Testing Extruder via GCode
+
+(heat extruder first)
+1. M83 - set to relative mode
+2. G1 E100 F150 - extrude 100mm at 150mm/m
