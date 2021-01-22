@@ -36,4 +36,4 @@ The __E93.00__ at the end of this line is the current value for the steps for th
 
 (heat extruder first)
 1. M83 - set to relative mode
-2. G1 E100 F150 - extrude 100mm at 150mm/m
+2. G1 E100 F80 - extrude 100mm at 80mm/m
